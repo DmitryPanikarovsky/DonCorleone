@@ -16,7 +16,7 @@ export const Header: FC<HeaderProps> = ({ className }) => {
                 <div className="flex gap-3 items-start">
                     <Image className="mt-1" src="/logo.png" width={44} height={44} alt="logo" />
                     <div>
-                        <h1 className="text-2xl uppercase font-black">Don Corleone`s</h1>
+                        <h1 className="text-2xl uppercase font-black">Don Corle`Pizza</h1>
                         <p className="text-sm text-gray-400 leading-3">вкуснее уже некуда</p>
                     </div>
                 </div>

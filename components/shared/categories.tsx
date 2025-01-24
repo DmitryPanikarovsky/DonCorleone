@@ -12,18 +12,17 @@ export const Categories: FC<CategoriesProps> = ({ className }) => {
     const [category, setCategory] = useState<number>(0);
 
     return (
-        <div className={cn("inline-flex gap-1 p-1", className)}>
+        <div className={cn("inline-flex gap-1 p-1 bg-gray-100 rounded-2xl ", className)}>
             {categories.map((cat, index) => (
-                <li
+                <a
                     className={cn(
-                        "flex items-center font-bold h-10 rounded-2xl px-5 cursor-pointer transition-all duration-200 border border-black",
-                        category === index && "text-primary border border-orange-500"
+                        "flex items-center font-bold h-10 rounded-2xl px-5 cursor-pointer transition-all duration-200",
+                        category === index && "text-primary bg-white shadow-md"
                     )}
                     key={index}
-                    onClick={() => setCategory(index)}
                 >
-                    {cat}
-                </li>
+                    <button onClick={() => setCategory(index)}>{cat}</button>
+                </a>
             ))}
         </div>
     );
