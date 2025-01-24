@@ -10,7 +10,7 @@ interface TopBarProps {
 
 export const TopBar: FC<TopBarProps> = ({ className }) => {
     return (
-        <div className={cn("sticky top-0 bg-white/50 backdrop-blur-[10px] py-5 shadow-lg shadow-black/5 z-10", className)}>
+        <div className={cn("sticky top-0 bg-white/50 backdrop-blur-[8px] py-5 shadow-lg shadow-black/5 z-10", className)}>
             <Container className="flex items-center justify-between">
                 <Categories />
                 <SortPopup />

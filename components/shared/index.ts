@@ -1,6 +1,9 @@
-export { Categories } from "./categories";
-export { SortPopup } from './sort-popup';
-export { Container } from "./container";
-export { Header } from "./header";
-export { Title } from "./title";
-export { TopBar } from "./top-bar";
+export * from "./categories";
+export * from "./checkbox-filters-group";
+export * from "./container";
+export * from "./filter-checkbox";
+export * from "./filters";
+export * from "./header";
+export * from "./sort-popup";
+export * from "./title";
+export * from "./top-bar";
