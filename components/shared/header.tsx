@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
-import { FC } from "react";
-import { Container } from "./container";
+import { ArrowRight, ShoppingCart, User } from "lucide-react";
 import Image from "next/image";
+import { FC } from "react";
 import { Button } from "../ui";
-import { User, ShoppingCart, ArrowRight } from "lucide-react";
+import { Container } from "./container";
 
 interface HeaderProps {
     className?: string;

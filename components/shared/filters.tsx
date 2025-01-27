@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Button, Input, RangeSlider } from "../ui";
-import { CheckboxFiltersGroup } from "./checkbox-filters-group";
-import { FilterCheckbox } from "./filter-checkbox";
+import { FilterCheckbox } from "./filters-checkbox";
+import { CheckboxFiltersGroup } from "./filters-checkbox-group";
 import { Title } from "./title";
 
 interface FiltersProps {
@@ -111,7 +111,7 @@ export const Filters: FC<FiltersProps> = ({ className }) => {
                 <FilterCheckbox text="Традиционное" value="15" className="select-none" />
                 <FilterCheckbox text="Тонкое" value="16" className="select-none" />
             </div>
-            <Button className='w-full mt-2 font-bold'>Применить</Button>
+            <Button className="w-full mt-2 font-bold">Применить</Button>
         </div>
     );
 };

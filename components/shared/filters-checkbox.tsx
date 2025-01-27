@@ -1,8 +1,8 @@
-import { cn } from "@/lib/utils";
-import { FC, ReactNode } from "react";
-import { Checkbox } from "../ui/checkbox";
+import { cn } from "@/lib/utils"
+import { FC, ReactNode } from "react"
+import { Checkbox } from "../ui/checkbox"
 
-export interface FilterChecboxProps {
+export interface FilterCheckboxProps {
     text: string;
     value: string;
     endAdornment?: ReactNode;
@@ -12,15 +12,9 @@ export interface FilterChecboxProps {
     className?: string;
 }
 
-export const FilterCheckbox: FC<FilterChecboxProps> = ({
-    text,
-    value,
-    endAdornment,
-    onCheckedChange,
-    checked,
-    name,
-    className,
-}) => {
+export const FilterCheckbox: FC<FilterCheckboxProps> = (
+    { text, value, endAdornment, onCheckedChange, checked, name, className }
+) => {
     return (
         <div className={cn("flex items-center gap-3", className)}>
             <Checkbox
