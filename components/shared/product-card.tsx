@@ -15,7 +15,7 @@ interface ProductCardProps {
 
 export const ProductCard: FC<ProductCardProps> = ({ className, imageUrl, price, name, id }) => {
     return (
-        <div className={cn("w-[300px]", className)}>
+        <div className={cn("w-[260px]", className)}>
             <Link href={`/product/${id}`}>
                 <div className="flex justify-center p-6 bg-secondary rounded-lg h-[250px]">
                     <img className="w-[215px] h-[205px] pl-2" src={imageUrl} alt={name} />
