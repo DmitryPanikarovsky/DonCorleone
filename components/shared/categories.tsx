@@ -1,27 +1,37 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { FC, useState } from "react";
+import { useCategoryStore } from "@/store/category";
+import { FC } from "react";
 interface CategoriesProps {
     className?: string;
 }
 
-const categories = ["Пиццы", "Комбо", "Закуски", "Коктейли", "Кофе", "Напитки", "Десерты"];
+const categories = [
+    { id: 1, name: "Пиццы" },
+    { id: 2, name: "Комбо" },
+    { id: 3, name: "Закуски" },
+    { id: 4, name: "Коктейли" },
+    { id: 5, name: "Кофе" },
+    { id: 6, name: "Напитки" },
+    { id: 7, name: "Десерты" },
+];
 
 export const Categories: FC<CategoriesProps> = ({ className }) => {
-    const [category, setCategory] = useState<number>(0);
+    const activeCategoryId = useCategoryStore((state) => state.activeId);
 
     return (
         <div className={cn("inline-flex gap-1 p-1 bg-gray-100 rounded-2xl ", className)}>
-            {categories.map((cat, index) => (
+            {categories.map(({ name, id }) => (
                 <a
                     className={cn(
                         "flex items-center font-bold h-10 rounded-2xl px-5 cursor-pointer transition-all duration-100",
-                        category === index && "text-primary bg-white shadow-md"
+                        activeCategoryId === id && "text-primary bg-white shadow-md"
                     )}
-                    key={index}
+                    key={id}
+                    href={`/#${name}`}
                 >
-                    <button onClick={() => setCategory(index)}>{cat}</button>
+                    <button>{name}</button>
                 </a>
             ))}
         </div>
