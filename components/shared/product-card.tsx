@@ -1,9 +1,9 @@
+import { cn } from "@/lib/utils";
+import { Plus } from "lucide-react";
 import Link from "next/link";
 import { FC } from "react";
+import { Button } from "../ui";
 import { Title } from "./title";
-import { Button } from '../ui'
-import { Plus } from 'lucide-react'
-import { cn } from '@/lib/utils'
 
 interface ProductCardProps {
     className?: string;
@@ -13,7 +13,9 @@ interface ProductCardProps {
     id: number;
 }
 
-export const ProductCard: FC<ProductCardProps> = ({ className, imageUrl, price, name, id }) => {
+export const ProductCard: FC<ProductCardProps> = (props) => {
+    const { className, imageUrl, price, name, id } = props;
+
     return (
         <div className={cn("w-[260px]", className)}>
             <Link href={`/product/${id}`}>
