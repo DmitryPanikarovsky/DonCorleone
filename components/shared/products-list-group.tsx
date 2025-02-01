@@ -22,7 +22,7 @@ export const ProductsListGroup: FC<ProductsListGroupProps> = (props) => {
 
     const intersectionRef = useRef<HTMLDivElement>(null!);
     const intersection = useIntersection(intersectionRef, {
-        threshold: 0.5,
+        threshold: 0.7,
     });
 
     useEffect(() => {

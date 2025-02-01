@@ -10,7 +10,7 @@ export default function Home() {
             <Container className="pb-14 mt-8">
                 <div className="flex gap-[80px]">
                     <div className="w-[244px]">
-                        <Filters />
+                        <Filters className="sticky top-[124px]" />
                     </div>
                     <div className="flex flex-1 flex-col gap-16">
                         <ProductsListGroup
@@ -20,56 +20,49 @@ export default function Home() {
                                 {
                                     id: 1,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 2,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 3,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 4,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 5,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 6,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 7,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
@@ -82,56 +75,49 @@ export default function Home() {
                                 {
                                     id: 1,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 2,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 3,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 4,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 5,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 6,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 7,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
@@ -144,56 +130,49 @@ export default function Home() {
                                 {
                                     id: 1,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 2,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 3,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 4,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 5,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 6,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
                                 {
                                     id: 7,
                                     name: "Маргарита",
-                                    imageUrl:
-                                        "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
+                                    imageUrl: "https://media.dodostatic.net/image/r:584x584/01939b6f01a676059b576eaab98abb2d.avif",
                                     price: 550,
                                     items: [{ price: 550 }],
                                 },
