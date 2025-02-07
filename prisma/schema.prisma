@@ -12,8 +12,9 @@ model User {
     id Int @id @default(autoincrement())
 
     fullName String
-    email    String @unique
+    email    String   @unique
     password String
+    verified DateTime
 
     role             UserRole          @default(USER)
     cart             Cart?
@@ -39,8 +40,7 @@ model Category {
 }
 
 model Product {
-    id Int @id @default(autoincrement())
-
+    id       Int    @id @default(autoincrement())
     name     String
     imageUrl String
 
@@ -61,12 +61,12 @@ model ProductItem {
     pizzaSize Int?
     pizzaType Int?
 
-    product   Product @relation(fields: [productId], references: [id])
+    cartItem  CartItem[]
+    product   Product    @relation(fields: [productId], references: [id])
     productId Int
 
-    createdAt DateTime   @default(now())
-    updatedAt DateTime   @updatedAt
-    cartItem  CartItem[]
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 }
 
 model Ingredient {
@@ -77,7 +77,6 @@ model Ingredient {
     imageUrl String
 
     products Product[]
-
     cartItem CartItem[]
 
     createdAt DateTime @default(now())
@@ -87,16 +86,16 @@ model Ingredient {
 model Cart {
     id Int @id @default(autoincrement())
 
-    user   User? @relation(fields: [userId], references: [id])
-    userId Int?  @unique
+    cartItem CartItem[]
+    user     User?      @relation(fields: [userId], references: [id])
+    userId   Int?       @unique
 
     token String
 
     totalAmount Int @default(0)
 
-    createdAt DateTime   @default(now())
-    updatedAt DateTime   @updatedAt
-    cartItem  CartItem[]
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
 }
 
 model CartItem {
@@ -108,9 +107,9 @@ model CartItem {
     cart   Cart @relation(fields: [cartId], references: [id])
     cartId Int
 
-    quantity Int
+    ingredients Ingredient[]
 
-    ingrediennt Ingredient[]
+    quantity Int
 
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
@@ -144,7 +143,7 @@ model VerificationCode {
     id Int @id @default(autoincrement())
 
     user   User @relation(fields: [userId], references: [id])
-    userId Int @unique
+    userId Int  @unique
 
     code String @unique
 

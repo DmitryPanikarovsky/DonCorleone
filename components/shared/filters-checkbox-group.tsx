@@ -20,17 +20,13 @@ interface Props {
     name?: string;
 }
 
-export const CheckboxFiltersGroup: FC<Props> = ({
-    className,
-    title,
-    items,
-    defaultItems,
-    limit,
-    searchInputPlaceholder,
-    // onChange,
-    // defaultValue,
-    // name,
-}) => {
+export const CheckboxFiltersGroup: FC<Props> = (props) => {
+    const { className, title, items, defaultItems, limit, searchInputPlaceholder,
+        // onChange,
+        // defaultValue,
+        // name,
+    } = props;
+
     const [showAll, setShowAll] = useState<boolean>(false);
     const [searchValue, setSearchValue] = useState<string>("");
 
@@ -63,17 +59,13 @@ export const CheckboxFiltersGroup: FC<Props> = ({
                         value={item.value}
                         // endAdornment={item.endAdornment}
                         // checked={false}
-                        onCheckedChange={(ids) => console.log(ids)}
+                        // onCheckedChange={(ids) => console.log(ids)}
                     />
                 ))}
             </div>
-            {items.length > limit && (
-                <div className="text-primary mt-2">
-                    <button onClick={() => setShowAll((showAll) => !showAll)}>
-                        {showAll ? "Скрыть" : "+ Показать всё"}
-                    </button>
-                </div>
-            )}
+            <div className="text-primary mt-2">
+                <button onClick={() => setShowAll((showAll) => !showAll)}>{showAll ? "Скрыть" : "+ Показать всё"}</button>
+            </div>
         </div>
     );
 };
