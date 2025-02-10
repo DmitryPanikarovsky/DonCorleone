@@ -9,19 +9,25 @@ import { Title } from "./title";
 type Item = FilterCheckboxProps;
 
 interface Props {
+    onChange?: (values: string[]) => void;
+    searchInputPlaceholder?: string;
+    defaultValue?: string[];
+    defaultItems: Item[];
+    className?: string;
     title: string;
     items: Item[];
-    defaultItems: Item[];
     limit: number;
-    searchInputPlaceholder?: string;
-    onChange?: (values: string[]) => void;
-    defaultValue?: string[];
-    className?: string;
     name?: string;
 }
 
 export const CheckboxFiltersGroup: FC<Props> = (props) => {
-    const { className, title, items, defaultItems, limit, searchInputPlaceholder,
+    const {
+        className,
+        title,
+        items,
+        defaultItems,
+        limit,
+        searchInputPlaceholder,
         // onChange,
         // defaultValue,
         // name,

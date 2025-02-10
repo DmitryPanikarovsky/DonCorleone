@@ -1,7 +1,6 @@
 import { Prisma } from "@prisma/client";
 import { hashSync } from "bcrypt";
 import { prisma } from "./prisma-client";
-import { connect } from 'http2'
 
 const randomDecimalNumber = (min: number, max: number) => {
     return Math.floor(Math.random() * (max - min) * 10 + min * 10) / 10;
@@ -331,15 +330,15 @@ const generatedData = async () => {
             {
                 userId: 1,
                 totalAmount: 0,
-                token: "111111"
+                token: "111111",
             },
             {
                 userId: 2,
                 totalAmount: 0,
-                token: "222222"
+                token: "222222",
             },
-        ]
-    })
+        ],
+    });
 
     await prisma.cartItem.create({
         data: {
